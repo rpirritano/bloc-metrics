@@ -12,6 +12,7 @@ gem 'rails', '~> 5.0.5'
  group :development do
    gem 'sqlite3'
    gem 'web-console', '~> 2.0'
+   gem 'listen'
  end
 
  gem 'sass-rails', '~> 5.0'
@@ -31,3 +32,5 @@ gem 'rails', '~> 5.0.5'
    gem 'factory_girl_rails'
    gem 'pry-rails'
  end
+
+gem 'bootstrap-sass'
