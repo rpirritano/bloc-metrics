@@ -20,7 +20,7 @@ gem 'rails', '~> 5.0.5'
  gem 'coffee-rails', '~> 4.1.0'
  gem 'jquery-rails'
  gem 'turbolinks'
- gem 'bootstrap'
+ gem 'bootstrap', '~> 4.0.0.alpha6'
  gem 'figaro'
 
  group :development, :test do

@@ -219,7 +219,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap
+  bootstrap (~> 4.0.0.alpha6)
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
@@ -242,4 +242,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.14.6
+   1.15.3
