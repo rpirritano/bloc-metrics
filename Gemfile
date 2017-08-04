@@ -4,35 +4,42 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.5'
 
 
- group :production do
-   #gem 'pg'
-   gem 'rails_12factor'
- end
+group :production do
+  #gem 'pg'
+  gem 'listen'#added to be able to add welcome controller
+  gem 'rails_12factor'
+end
 
- group :development do
-   gem 'sqlite3'
-   gem 'web-console', '~> 2.0'
-   gem 'listen'
- end
+group :development do
+  gem 'sqlite3'
+  gem 'web-console', '~> 2.0'
+end
 
- gem 'sass-rails', '~> 5.0'
- gem 'uglifier', '>= 1.3.0'
- gem 'coffee-rails', '~> 4.1.0'
- gem 'jquery-rails'
- gem 'turbolinks'
- gem 'bootstrap'
- gem 'figaro'
+gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'bootstrap'
+gem 'figaro'
 
- group :development, :test do
-   gem 'byebug'
-   gem 'spring'
-   gem 'rspec-rails'
-   gem 'shoulda'
-   gem 'faker'
-   gem 'factory_girl_rails'
-   gem 'pry-rails'
- end
+group :development, :test do
+  gem 'byebug'
+  gem 'spring'
+  gem 'rspec-rails'
+  gem 'rails-controller-testing'
+  gem 'shoulda'
+  gem 'faker'
+  gem 'factory_girl_rails'
+  gem 'pry-rails'
+end
+
+gem 'devise'
+gem 'delayed_job_active_record'
 
 gem 'bootstrap-sass'
 
-gem 'devise'
+gem 'rails-controller-testing'
+
+gem 'jquery-turbolinks'
